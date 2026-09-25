@@ -1,0 +1,38 @@
+{
+    "name": "karvulas-marble-theme",
+    "displayName": "Karvulas Marble Theme",
+    "description": "Dark and light Visual Studio Code themes with language-specific syntax colors.",
+    "version": "0.1.0",
+    "publisher": "Karvulas",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "theme",
+        "dark",
+        "light",
+        "marble",
+        "karvulas"
+    ],
+    "extensionKind": [
+        "ui"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Karvulas Marble Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/karvulas-marble-dark-color-theme.json"
+            },
+            {
+                "label": "Karvulas Marble Light",
+                "uiTheme": "vs",
+                "path": "./themes/karvulas-marble-light-color-theme.json"
+            }
+        ]
+    }
+}

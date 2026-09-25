@@ -1,0 +1,13 @@
+{
+    "version": "0.0.0",
+    "configurations": [
+        {
+            "name": "Run Karvulas Marble Theme",
+            "type": "extensionHost",
+            "request": "launch",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ]
+        }
+    ]
+}
