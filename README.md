@@ -1,16 +1,19 @@
-# Karvulas Marble Theme
+# Karvulas Evergreen Theme
 
-Karvulas Marble Theme is a Visual Studio Code theme extension with dark and light variants. Its workbench and syntax colors are being developed incrementally.
+Karvulas Evergreen Theme is a Visual Studio Code color theme extension. The current version includes a light theme with neutral surfaces, slate text, and evergreen accents.
 
-## Themes
+## Theme
 
-- **Karvulas Marble Dark**
-- **Karvulas Marble Light**
+- **Karvulas Evergreen Light**
 
 ## Language Support
 
-The current theme files include syntax rules for Avalonia XAML, XML, C#, JSON, JSONC, and Markdown. Language palettes will be refined individually as development continues.
+JSON, JSONC, and Markdown have dedicated syntax colors. The theme also includes rules for Avalonia XAML, XML, and C#; their palettes will be refined individually.
+
+## Markdown Preview
+
+Evergreen Light also styles rendered Markdown headings and code highlighting in VS Code's Markdown Preview. These preview styles apply only while Evergreen Light is selected.
 
 ## License
 
-Karvulas Marble Theme is available under the [MIT License](LICENSE).
+Karvulas Evergreen Theme is available under the [MIT License](LICENSE).

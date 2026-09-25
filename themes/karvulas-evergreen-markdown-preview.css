@@ -1,0 +1,66 @@
+/* Apply Markdown Preview colors only while Karvulas Evergreen Light is active. */
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) {
+    color: #0B1C30;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) h1 {
+    color: #00422B;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) h2 {
+    color: #00573B;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) h3 {
+    color: #006C49;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) h4 {
+    color: #0D7452;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) h5 {
+    color: #217B5C;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) h6 {
+    color: #328366;
+}
+
+/* The code block background comes from textCodeBlock.background in the theme. */
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) pre code {
+    color: #0B1C30;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) :is(.hljs-keyword, .hljs-selector-tag, .hljs-tag, .hljs-name, .hljs-built_in, .hljs-link, .hljs-symbol) {
+    color: #005AC2;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) :is(.hljs-type, .hljs-class, .hljs-title, .hljs-function, .hljs-attr, .hljs-attribute, .hljs-builtin-name, .hljs-section) {
+    color: #006C49;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) :is(.hljs-string, .hljs-template-tag) {
+    color: #B45309;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) :is(.hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable) {
+    color: #6D28D9;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) :is(.hljs-comment, .hljs-quote, .hljs-doctag) {
+    color: #64748B;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) :is(.hljs-meta, .hljs-meta-keyword) {
+    color: #475569;
+}
+
+/* JSON and JSONC keep the syntax colors chosen for their source editor. */
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) :is(.language-json, .language-jsonc) .hljs-string {
+    color: #005AC2;
+}
+
+body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) :is(.language-json, .language-jsonc) .hljs-number {
+    color: #B45309;
+}
