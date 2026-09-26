@@ -2014,13 +2014,17 @@
             "name": "TypeScript - Modifiers and Async Keywords",
             "scope": [
                 "source.ts storage.modifier.ts",
-                "source.tsx storage.modifier.tsx"
+                "source.tsx storage.modifier.tsx",
+                "source.ts storage.modifier.async.ts",
+                "source.tsx storage.modifier.async.tsx"
             ],
             "settings": { "foreground": "#1A6CEE" }
         },
         {
             "name": "TypeScript - Control Keywords",
             "scope": [
+                "source.ts keyword.control",
+                "source.tsx keyword.control",
                 "source.ts keyword.control.ts",
                 "source.tsx keyword.control.tsx",
                 "source.ts keyword.other.ts",
@@ -2528,6 +2532,13 @@
             }
         },
         {
+            "name": "Markdown - Heading Markers",
+            "scope": "text.html.markdown punctuation.definition.heading.markdown",
+            "settings": {
+                "foreground": "#009451"
+            }
+        },
+        {
             "name": "Markdown - Bold",
             "scope": "text.html.markdown markup.bold.markdown",
             "settings": {
@@ -2552,6 +2563,16 @@
             "settings": {
                 "foreground": "#9653D6",
                 "fontStyle": "bold italic"
+            }
+        },
+        {
+            "name": "Markdown - Emphasis Markers",
+            "scope": [
+                "text.html.markdown punctuation.definition.bold.markdown",
+                "text.html.markdown punctuation.definition.italic.markdown"
+            ],
+            "settings": {
+                "foreground": "#009451"
             }
         },
         {
@@ -2651,7 +2672,7 @@
             "name": "Markdown - List Markers",
             "scope": "text.html.markdown punctuation.definition.list.begin.markdown",
             "settings": {
-                "foreground": "#9653D6"
+                "foreground": "#009451"
             }
         },
         {
@@ -2671,11 +2692,15 @@
             }
         },
         {
-            "name": "Markdown - Table Delimiters",
-            "scope": [
-                "text.html.markdown punctuation.definition.table.markdown",
-                "text.html.markdown punctuation.separator.table.markdown"
-            ],
+            "name": "Markdown - Table Pipes",
+            "scope": "text.html.markdown punctuation.definition.table.markdown",
+            "settings": {
+                "foreground": "#009451"
+            }
+        },
+        {
+            "name": "Markdown - Table Separators",
+            "scope": "text.html.markdown punctuation.separator.table.markdown",
             "settings": {
                 "foreground": "#9653D6"
             }

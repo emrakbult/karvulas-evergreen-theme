@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## 0.4.1 - 2026-09-27
+
+### Fixed
+
+- Colored TypeScript and TSX `async` modifiers and control keywords such as `if` and `return` with the intended blue palette.
+
+### Changed
+
+- Colored Markdown heading markers, emphasis markers, list markers, and table pipes with the main green accent.
+
 ## 0.4.0 - 2026-09-27
 
 ### Added
