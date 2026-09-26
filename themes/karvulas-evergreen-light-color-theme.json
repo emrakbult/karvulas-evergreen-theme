@@ -195,7 +195,7 @@
         "editor.findMatchHighlightBackground": "#10B98122",
         "editor.findMatchHighlightBorder": "#CBD5E1",
         "editor.findRangeHighlightBackground": "#10B98133",
-        "editor.findRangeHighlightBorder": "#CBD5E1",
+        "editor.findRangeHighlightBorder": "#97ABC380",
         "search.resultsInfoForeground": "#475569",
         "searchEditor.findMatchBackground": "#10B98155",
         "searchEditor.findMatchBorder": "#CBD5E1",
@@ -529,8 +529,8 @@
         // =====================================================
         // CHAT
         // =====================================================
-        "chat.requestBubbleBackground": "#ECFDF5",
-        "chat.requestBubbleHoverBackground": "#D1FAE5",
+        "chat.requestBubbleBackground": "#D9FBEB80",
+        "chat.requestBubbleHoverBackground": "#A3F5CB80",
         "chat.requestBorder": "#A7F3D0",
         "chat.avatarBackground": "#009451",
         "chat.avatarForeground": "#FFFFFF",
@@ -617,7 +617,7 @@
             }
         },
         {
-            "name": "AXAML - Tag Operators",
+            "name": "AXAML - Tag Syntax Fallback",
             "scope": [
                 "source.axaml meta.tag.xml",
                 "source.axaml meta.tag.no-content.xml",
@@ -771,7 +771,7 @@
             "settings": { "foreground": "#9653D6" }
         },
         {
-            "name": "XML - Tag Operators",
+            "name": "XML - Tag Syntax Fallback",
             "scope": [
                 "text.xml meta.tag.xml",
                 "text.xml meta.tag.no-content.xml",
@@ -878,7 +878,308 @@
             }
         },
         // =====================================================
-        // C#: keywords, types, methods, and symbols
+        // HTML: tags, attributes, values, and embedded content
+        // =====================================================
+        {
+            "name": "HTML - Text",
+            "scope": [
+                "text.html.basic",
+                "text.html.derivative"
+            ],
+            "settings": { "foreground": "#3F3F3F" }
+        },
+        {
+            "name": "HTML - Comments",
+            "scope": [
+                "text.html.basic comment.block.html",
+                "text.html.derivative comment.block.html",
+                "text.html.basic punctuation.definition.comment.html",
+                "text.html.derivative punctuation.definition.comment.html"
+            ],
+            "settings": { "foreground": "#64748B" }
+        },
+        {
+            "name": "HTML - Tag Syntax Fallback",
+            "scope": [
+                "text.html.basic meta.tag",
+                "text.html.derivative meta.tag"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "HTML - Tag Punctuation",
+            "scope": [
+                "text.html.basic punctuation.definition.tag",
+                "text.html.derivative punctuation.definition.tag"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "HTML - Element Names",
+            "scope": [
+                "text.html.basic entity.name.tag.html",
+                "text.html.derivative entity.name.tag.html"
+            ],
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "HTML - Attribute Names",
+            "scope": [
+                "text.html.basic entity.other.attribute-name.html",
+                "text.html.derivative entity.other.attribute-name.html"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "HTML - Attribute Separators",
+            "scope": [
+                "text.html.basic punctuation.separator.key-value.html",
+                "text.html.derivative punctuation.separator.key-value.html"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "HTML - Quoted Attribute Values",
+            "scope": [
+                "text.html.basic string.quoted.double.html",
+                "text.html.derivative string.quoted.double.html",
+                "text.html.basic string.quoted.single.html",
+                "text.html.derivative string.quoted.single.html"
+            ],
+            "settings": { "foreground": "#007F9E" }
+        },
+        {
+            "name": "HTML - Unquoted Attribute Values",
+            "scope": [
+                "text.html.basic string.unquoted.html",
+                "text.html.derivative string.unquoted.html"
+            ],
+            "settings": { "foreground": "#007F9E" }
+        },
+        {
+            "name": "HTML - String Punctuation",
+            "scope": [
+                "text.html.basic punctuation.definition.string.begin.html",
+                "text.html.derivative punctuation.definition.string.begin.html",
+                "text.html.basic punctuation.definition.string.end.html",
+                "text.html.derivative punctuation.definition.string.end.html"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "HTML - Entities",
+            "scope": [
+                "text.html.basic constant.character.entity",
+                "text.html.derivative constant.character.entity",
+                "text.html.basic punctuation.definition.entity.html",
+                "text.html.derivative punctuation.definition.entity.html"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "HTML - Doctype Declaration",
+            "scope": [
+                "text.html.basic meta.tag.metadata.doctype.html entity.name.tag.html",
+                "text.html.derivative meta.tag.metadata.doctype.html entity.name.tag.html",
+                "text.html.basic meta.tag.metadata.doctype.html entity.other.attribute-name.html",
+                "text.html.derivative meta.tag.metadata.doctype.html entity.other.attribute-name.html"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "HTML - CDATA Text",
+            "scope": [
+                "text.html.basic meta.tag.metadata.cdata.html string.other.inline-data.html",
+                "text.html.derivative meta.tag.metadata.cdata.html string.other.inline-data.html"
+            ],
+            "settings": { "foreground": "#0E7490" }
+        },
+        {
+            "name": "HTML - Deprecated Syntax",
+            "scope": [
+                "text.html.basic invalid.deprecated",
+                "text.html.derivative invalid.deprecated"
+            ],
+            "settings": { "foreground": "#A17900", "fontStyle": "underline" }
+        },
+        {
+            "name": "HTML - Invalid Syntax",
+            "scope": [
+                "text.html.basic invalid.illegal",
+                "text.html.derivative invalid.illegal"
+            ],
+            "settings": { "foreground": "#BA1A1A", "fontStyle": "underline" }
+        },
+        // =====================================================
+        // CSS: selectors, properties, values, and at-rules
+        // =====================================================
+        {
+            "name": "CSS - Base Text",
+            "scope": "source.css",
+            "settings": { "foreground": "#3F3F3F" }
+        },
+        {
+            "name": "CSS - Comments",
+            "scope": [
+                "source.css comment.block.css",
+                "source.css punctuation.definition.comment.begin.css",
+                "source.css punctuation.definition.comment.end.css"
+            ],
+            "settings": { "foreground": "#64748B" }
+        },
+        {
+            "name": "CSS - Element Selectors",
+            "scope": "source.css entity.name.tag",
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "CSS - Class Selectors",
+            "scope": "source.css entity.other.attribute-name.class.css",
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "CSS - ID Selectors",
+            "scope": "source.css entity.other.attribute-name.id.css",
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "CSS - Attribute Selectors",
+            "scope": "source.css entity.other.attribute-name.css",
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "CSS - Pseudo Selectors",
+            "scope": [
+                "source.css entity.other.attribute-name.pseudo-class.css",
+                "source.css entity.other.attribute-name.pseudo-element.css"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "CSS - Selector Namespaces",
+            "scope": [
+                "source.css entity.other.namespace-prefix.css",
+                "source.css entity.name.function.namespace-prefix.css"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "CSS - Property Names",
+            "scope": [
+                "source.css meta.property-name.css",
+                "source.css support.type.property-name.css",
+                "source.css support.type.vendored.property-name.css"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "CSS - Custom Properties",
+            "scope": "source.css variable.css",
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "CSS - Property Values",
+            "scope": [
+                "source.css meta.property-value.css",
+                "source.css support.constant.property-value.css",
+                "source.css support.constant.vendored.property-value.css"
+            ],
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "CSS - At Rules",
+            "scope": "source.css keyword.control.at-rule",
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "CSS - Declaration At Rules",
+            "scope": [
+                "source.css keyword.control.at-rule.import.css",
+                "source.css keyword.control.at-rule.namespace.css",
+                "source.css keyword.control.at-rule.font-face.css",
+                "source.css keyword.control.at-rule.keyframes.css",
+                "source.css keyword.control.at-rule.layer.css"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "CSS - Functions",
+            "scope": "source.css support.function",
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "CSS - Colors",
+            "scope": [
+                "source.css constant.other.color.rgb-value.hex.css",
+                "source.css support.constant.color"
+            ],
+            "settings": { "foreground": "#007F9E" }
+        },
+        {
+            "name": "CSS - Strings and URLs",
+            "scope": [
+                "source.css string.quoted.double.css",
+                "source.css string.quoted.single.css",
+                "source.css string.unquoted.attribute-value.css",
+                "source.css variable.parameter.url.css",
+                "source.css support.constant.font-name.css"
+            ],
+            "settings": { "foreground": "#007F9E" }
+        },
+        {
+            "name": "CSS - Numbers and Keyframe Offsets",
+            "scope": [
+                "source.css constant.numeric.css",
+                "source.css entity.other.keyframe-offset.css",
+                "source.css constant.other.unicode-range.css"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "CSS - Units and Important",
+            "scope": [
+                "source.css keyword.other.unit",
+                "source.css keyword.other.important.css"
+            ],
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "CSS - Other Value Keywords",
+            "scope": [
+                "source.css support.constant.media.css",
+                "source.css support.constant.parity.css",
+                "source.css support.constant.step-direction.css",
+                "source.css support.constant.text-direction.css"
+            ],
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "CSS - Operators",
+            "scope": "source.css keyword.operator",
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "CSS - Punctuation",
+            "scope": "source.css punctuation",
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "CSS - String Escapes",
+            "scope": "source.css constant.character.escape",
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "CSS - Deprecated Syntax",
+            "scope": "source.css invalid.deprecated",
+            "settings": { "foreground": "#A17900", "fontStyle": "underline" }
+        },
+        {
+            "name": "CSS - Invalid Syntax",
+            "scope": "source.css invalid.illegal",
+            "settings": { "foreground": "#BA1A1A", "fontStyle": "underline" }
+        },
+        // =====================================================
+        // C#: base text and keywords
         // =====================================================
         {
             "name": "C# - Base Text",
@@ -899,7 +1200,7 @@
             }
         },
         {
-            "name": "C# - Keywords",
+            "name": "C# - General Keywords",
             "scope": [
                 "source.cs keyword.type",
                 "source.cs keyword.other",
@@ -912,7 +1213,7 @@
             }
         },
         {
-            "name": "C# - Bool and Int Keywords",
+            "name": "C# - Boolean and Integer Type Keywords",
             "scope": [
                 "source.cs keyword.type.bool.cs",
                 "source.cs keyword.type.int.cs"
@@ -936,7 +1237,7 @@
             }
         },
         {
-            "name": "C# - Blue Modifiers",
+            "name": "C# - Access and Declaration Modifiers",
             "scope": [
                 "source.cs storage.modifier.public.cs",
                 "source.cs storage.modifier.private.cs",
@@ -947,14 +1248,21 @@
             }
         },
         {
-            "name": "C# - Green Using Namespace New and Class Keywords",
+            "name": "C# - Using and Namespace Keywords",
             "scope": [
-                "source.cs keyword.operator.expression.new.cs",
-                "source.cs storage.modifier.new.cs",
                 "source.cs keyword.other.directive.using.cs",
                 "source.cs keyword.control.context.using.cs",
-                "source.cs storage.type.namespace.cs",
-                "source.cs storage.type.class.cs"
+                "source.cs storage.type.namespace.cs"
+            ],
+            "settings": {
+                "foreground": "#009451"
+            }
+        },
+        {
+            "name": "C# - Object Creation Keywords",
+            "scope": [
+                "source.cs keyword.operator.expression.new.cs",
+                "source.cs storage.modifier.new.cs"
             ],
             "settings": {
                 "foreground": "#009451"
@@ -985,8 +1293,9 @@
             }
         },
         {
-            "name": "C# - Type Declarations",
+            "name": "C# - Type Declaration Keywords",
             "scope": [
+                "source.cs storage.type.class.cs",
                 "source.cs storage.type.interface.cs",
                 "source.cs storage.type.struct.cs",
                 "source.cs storage.type.enum.cs",
@@ -997,15 +1306,18 @@
                 "foreground": "#009451"
             }
         },
+        // =====================================================
+        // C#: named types
+        // =====================================================
         {
-            "name": "C# - Namespaces",
+            "name": "C# - Namespace Names",
             "scope": "source.cs entity.name.type.namespace.cs",
             "settings": {
                 "foreground": "#9653D6"
             }
         },
         {
-            "name": "C# - Classes",
+            "name": "C# - Class Names",
             "scope": [
                 "source.cs entity.name.type.class.cs",
                 "source.cs entity.name.type.cs"
@@ -1015,28 +1327,28 @@
             }
         },
         {
-            "name": "C# - Interfaces",
+            "name": "C# - Interface Names",
             "scope": "source.cs entity.name.type.interface.cs",
             "settings": {
                 "foreground": "#0079AA"
             }
         },
         {
-            "name": "C# - Structs",
+            "name": "C# - Struct Names",
             "scope": "source.cs entity.name.type.struct.cs",
             "settings": {
                 "foreground": "#009451"
             }
         },
         {
-            "name": "C# - Enums",
+            "name": "C# - Enum Names",
             "scope": "source.cs entity.name.type.enum.cs",
             "settings": {
                 "foreground": "#0079AA"
             }
         },
         {
-            "name": "C# - Delegates",
+            "name": "C# - Delegate Names",
             "scope": "source.cs entity.name.type.delegate.cs",
             "settings": {
                 "foreground": "#9653D6"
@@ -1049,8 +1361,11 @@
                 "foreground": "#009451"
             }
         },
+        // =====================================================
+        // C#: members and variables
+        // =====================================================
         {
-            "name": "C# - Methods",
+            "name": "C# - Method Names",
             "scope": [
                 "source.cs entity.name.function.cs",
                 "source.cs entity.name.function.member.overload.cs",
@@ -1061,7 +1376,7 @@
             }
         },
         {
-            "name": "C# - Properties",
+            "name": "C# - Property Names",
             "scope": [
                 "source.cs entity.name.variable.property.cs",
                 "source.cs variable.other.object.property.cs"
@@ -1071,28 +1386,28 @@
             }
         },
         {
-            "name": "C# - Fields",
+            "name": "C# - Field Names",
             "scope": "source.cs entity.name.variable.field.cs",
             "settings": {
                 "foreground": "#3F3F3F"
             }
         },
         {
-            "name": "C# - Events",
+            "name": "C# - Event Names",
             "scope": "source.cs entity.name.variable.event.cs",
             "settings": {
                 "foreground": "#A17900"
             }
         },
         {
-            "name": "C# - Parameters",
+            "name": "C# - Parameter Names",
             "scope": "source.cs entity.name.variable.parameter.cs",
             "settings": {
                 "foreground": "#3F3F3F"
             }
         },
         {
-            "name": "C# - Local Variables",
+            "name": "C# - Local, Range, and Tuple Variables",
             "scope": [
                 "source.cs entity.name.variable.local.cs",
                 "source.cs entity.name.variable.range-variable.cs",
@@ -1104,7 +1419,7 @@
             }
         },
         {
-            "name": "C# - Constants",
+            "name": "C# - Constant Names",
             "scope": "source.cs variable.other.constant.cs",
             "settings": {
                 "foreground": "#A17900"
@@ -1117,6 +1432,9 @@
                 "foreground": "#1A6CEE"
             }
         },
+        // =====================================================
+        // C#: literals and punctuation
+        // =====================================================
         {
             "name": "C# - Strings",
             "scope": [
@@ -1143,12 +1461,19 @@
             }
         },
         {
-            "name": "C# - Language Constants",
+            "name": "C# - Boolean Literals",
             "scope": [
                 "source.cs constant.language.boolean.true.cs",
                 "source.cs constant.language.boolean.false.cs",
-                "source.cs constant.language.null.cs"
+                "source.cs constant.language.boolean.cs"
             ],
+            "settings": {
+                "foreground": "#A17900"
+            }
+        },
+        {
+            "name": "C# - Null Literal",
+            "scope": "source.cs constant.language.null.cs",
             "settings": {
                 "foreground": "#9653D6"
             }
@@ -1167,6 +1492,9 @@
                 "foreground": "#9653D6"
             }
         },
+        // =====================================================
+        // C#: directives, attributes, and diagnostics
+        // =====================================================
         {
             "name": "C# - Preprocessor",
             "scope": [
@@ -1219,10 +1547,786 @@
             }
         },
         // =====================================================
+        // Python: keywords, names, literals, and punctuation
+        // =====================================================
+        {
+            "name": "Python - Base Text",
+            "scope": "source.python",
+            "settings": { "foreground": "#3F3F3F" }
+        },
+        {
+            "name": "Python - Comments",
+            "scope": [
+                "source.python comment.line.number-sign.python",
+                "source.python comment.typehint.directive.notation.python",
+                "source.python comment.typehint.ignore.notation.python",
+                "source.python punctuation.definition.comment.python"
+            ],
+            "settings": { "foreground": "#64748B" }
+        },
+        {
+            "name": "Python - Import Keywords",
+            "scope": "source.python keyword.control.import.python",
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "Python - Declaration Keywords",
+            "scope": [
+                "source.python storage.type.function.python",
+                "source.python storage.type.function.async.python",
+                "source.python storage.type.function.lambda.python",
+                "source.python storage.type.class.python"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "Python - Control Keywords",
+            "scope": [
+                "source.python keyword.control.flow.python",
+                "source.python storage.modifier.declaration.python"
+            ],
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "Python - Function Names",
+            "scope": [
+                "source.python entity.name.function.python",
+                "source.python meta.function-call.generic.python",
+                "source.python support.function.builtin.python",
+                "source.python support.function.magic.python"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "Python - Class Names",
+            "scope": [
+                "source.python entity.name.type.class.python",
+                "source.python entity.other.inherited-class.python",
+                "source.python support.type.exception.python"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "Python - Decorators",
+            "scope": "source.python entity.name.function.decorator.python",
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "Python - Self and Cls",
+            "scope": [
+                "source.python variable.language.special.self.python",
+                "source.python variable.language.special.cls.python",
+                "source.python variable.parameter.function.language.special.self.python",
+                "source.python variable.parameter.function.language.special.cls.python"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "Python - Magic Variables",
+            "scope": "source.python support.variable.magic.python",
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "Python - Parameter Names",
+            "scope": [
+                "source.python variable.parameter.function.language.python",
+                "source.python variable.parameter.function-call.python"
+            ],
+            "settings": { "foreground": "#3F3F3F" }
+        },
+        {
+            "name": "Python - Builtin Types",
+            "scope": [
+                "source.python support.type.python",
+                "source.python support.type.metaclass.python"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "Python - Strings",
+            "scope": [
+                "source.python string.quoted",
+                "source.python string.regexp.quoted"
+            ],
+            "settings": { "foreground": "#007F9E" }
+        },
+        {
+            "name": "Python - String Delimiters",
+            "scope": [
+                "source.python punctuation.definition.string.begin.python",
+                "source.python punctuation.definition.string.end.python"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "Python - String Escapes and Format Markers",
+            "scope": [
+                "source.python constant.character.escape.python",
+                "source.python constant.character.format.placeholder.other.python",
+                "source.python storage.type.format.python"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "Python - Numbers",
+            "scope": [
+                "source.python constant.numeric",
+                "source.python storage.type.number.python",
+                "source.python storage.type.imaginary.number.python"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "Python - Language Constants",
+            "scope": [
+                "source.python constant.language.python",
+                "source.python constant.other.ellipsis.python"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "Python - Named Constants",
+            "scope": "source.python constant.other.caps.python",
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "Python - Operators",
+            "scope": "source.python keyword.operator",
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "Python - Punctuation",
+            "scope": "source.python punctuation",
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "Python - Comment Markers",
+            "scope": "source.python comment.line.number-sign.python punctuation.definition.comment.python",
+            "settings": { "foreground": "#64748B" }
+        },
+        {
+            "name": "Python - Invalid",
+            "scope": "source.python invalid.illegal",
+            "settings": {
+                "foreground": "#BA1A1A",
+                "fontStyle": "underline"
+            }
+        },
+        // =====================================================
+        // JavaScript: declarations, names, literals, and punctuation
+        // =====================================================
+        {
+            "name": "JavaScript - Base Text",
+            "scope": "source.js",
+            "settings": { "foreground": "#3F3F3F" }
+        },
+        {
+            "name": "JavaScript - Comments",
+            "scope": [
+                "source.js comment.line.double-slash.js",
+                "source.js comment.block.js",
+                "source.js comment.block.documentation.js",
+                "source.js punctuation.definition.comment.js"
+            ],
+            "settings": { "foreground": "#64748B" }
+        },
+        {
+            "name": "JavaScript - Module Keywords",
+            "scope": [
+                "source.js keyword.control.import.js",
+                "source.js keyword.control.export.js",
+                "source.js keyword.control.from.js",
+                "source.js keyword.control.as.js"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "JavaScript - Declaration Keywords",
+            "scope": [
+                "source.js storage.type.function.js",
+                "source.js storage.type.function.arrow.js",
+                "source.js storage.type.class.js"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "JavaScript - Property Accessor Keywords",
+            "scope": "source.js storage.type.property.js",
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "JavaScript - Variable Declaration Keywords",
+            "scope": "source.js storage.type.js",
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "JavaScript - Modifiers and Async Keywords",
+            "scope": [
+                "source.js storage.modifier.async.js",
+                "source.js storage.modifier.js"
+            ],
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "JavaScript - Control Keywords",
+            "scope": [
+                "source.js keyword.control.js",
+                "source.js keyword.control.flow.js",
+                "source.js keyword.control.conditional.js",
+                "source.js keyword.control.loop.js",
+                "source.js keyword.control.trycatch.js",
+                "source.js keyword.control.switch.js"
+            ],
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "JavaScript - Object Creation Keyword",
+            "scope": [
+                "source.js keyword.control.new.js",
+                "source.js keyword.operator.new.js"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "JavaScript - Class Names",
+            "scope": [
+                "source.js entity.name.type.class.js",
+                "source.js entity.other.inherited-class.js",
+                "source.js support.class.js",
+                "source.js support.class.promise.js"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "JavaScript - Function Names",
+            "scope": "source.js entity.name.function.js",
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "JavaScript - Property Names",
+            "scope": [
+                "source.js variable.other.property.js",
+                "source.js variable.other.object.property.js",
+                "source.js variable.object.property.js",
+                "source.js support.variable.property.js"
+            ],
+            "settings": { "foreground": "#080808" }
+        },
+        {
+            "name": "JavaScript - Parameter Names",
+            "scope": "source.js variable.parameter.js",
+            "settings": { "foreground": "#3F3F3F" }
+        },
+        {
+            "name": "JavaScript - Constant Binding Names",
+            "scope": "source.js meta.definition.variable.js variable.other.constant.js",
+            "settings": { "foreground": "#3F3F3F" }
+        },
+        {
+            "name": "JavaScript - This Super and Arguments",
+            "scope": [
+                "source.js variable.language.this.js",
+                "source.js variable.language.super.js",
+                "source.js variable.language.arguments.js"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "JavaScript - Builtin Types",
+            "scope": [
+                "source.js support.type.builtin.js",
+                "source.js support.type.primitive.js"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "JavaScript - Strings and Templates",
+            "scope": [
+                "source.js string.quoted.double.js",
+                "source.js string.quoted.single.js",
+                "source.js string.template.js"
+            ],
+            "settings": { "foreground": "#007F9E" }
+        },
+        {
+            "name": "JavaScript - Regular Expressions",
+            "scope": "source.js string.regexp.js",
+            "settings": { "foreground": "#007F9E" }
+        },
+        {
+            "name": "JavaScript - String Delimiters",
+            "scope": [
+                "source.js punctuation.definition.string.begin.js",
+                "source.js punctuation.definition.string.end.js",
+                "source.js punctuation.definition.string.template.begin.js",
+                "source.js punctuation.definition.string.template.end.js"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "JavaScript - Escapes and Template Markers",
+            "scope": [
+                "source.js constant.character.escape.js",
+                "source.js punctuation.definition.template-expression.begin.js",
+                "source.js punctuation.definition.template-expression.end.js"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "JavaScript - Numbers",
+            "scope": [
+                "source.js constant.numeric",
+                "source.js storage.type.numeric.bigint.js"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "JavaScript - Boolean Literals",
+            "scope": [
+                "source.js constant.language.boolean.true.js",
+                "source.js constant.language.boolean.false.js"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "JavaScript - Null and Undefined Literals",
+            "scope": [
+                "source.js constant.language.null.js",
+                "source.js constant.language.undefined.js"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "JavaScript - Other Constants",
+            "scope": [
+                "source.js constant.language.nan.js",
+                "source.js constant.language.infinity.js",
+                "source.js support.constant.js",
+                "source.js variable.other.constant.js"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "JavaScript - Operators",
+            "scope": "source.js keyword.operator",
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "JavaScript - Punctuation",
+            "scope": "source.js punctuation",
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "JavaScript - Comment Markers",
+            "scope": "source.js comment punctuation.definition.comment.js",
+            "settings": { "foreground": "#64748B" }
+        },
+        {
+            "name": "JavaScript - Invalid",
+            "scope": "source.js invalid.illegal",
+            "settings": {
+                "foreground": "#BA1A1A",
+                "fontStyle": "underline"
+            }
+        },
+        // =====================================================
+        // TypeScript / TSX: names, types, literals, JSX, and punctuation
+        // =====================================================
+        {
+            "name": "TypeScript - Base Text",
+            "scope": [
+                "source.ts",
+                "source.tsx"
+            ],
+            "settings": { "foreground": "#3F3F3F" }
+        },
+        {
+            "name": "TypeScript - Comments",
+            "scope": [
+                "source.ts comment.line.double-slash.ts",
+                "source.tsx comment.line.double-slash.tsx",
+                "source.ts comment.block.ts",
+                "source.tsx comment.block.tsx",
+                "source.ts comment.block.documentation.ts",
+                "source.tsx comment.block.documentation.tsx",
+                "source.ts comment.line.triple-slash.directive.ts",
+                "source.tsx comment.line.triple-slash.directive.tsx",
+                "source.ts punctuation.definition.comment.ts",
+                "source.tsx punctuation.definition.comment.tsx"
+            ],
+            "settings": { "foreground": "#64748B" }
+        },
+        {
+            "name": "TypeScript - Module Keywords",
+            "scope": [
+                "source.ts keyword.control.import.ts",
+                "source.tsx keyword.control.import.tsx",
+                "source.ts keyword.control.export.ts",
+                "source.tsx keyword.control.export.tsx",
+                "source.ts keyword.control.from.ts",
+                "source.tsx keyword.control.from.tsx",
+                "source.ts keyword.control.as.ts",
+                "source.tsx keyword.control.as.tsx",
+                "source.ts keyword.control.require.ts",
+                "source.tsx keyword.control.require.tsx"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "TypeScript - Declaration Keywords",
+            "scope": [
+                "source.ts storage.type.function.ts",
+                "source.tsx storage.type.function.tsx",
+                "source.ts storage.type.function.arrow.ts",
+                "source.tsx storage.type.function.arrow.tsx",
+                "source.ts storage.type.class.ts",
+                "source.tsx storage.type.class.tsx",
+                "source.ts storage.type.interface.ts",
+                "source.tsx storage.type.interface.tsx",
+                "source.ts storage.type.enum.ts",
+                "source.tsx storage.type.enum.tsx",
+                "source.ts storage.type.namespace.ts",
+                "source.tsx storage.type.namespace.tsx",
+                "source.ts storage.type.type.ts",
+                "source.tsx storage.type.type.tsx",
+                "source.ts keyword.control.type.ts",
+                "source.tsx keyword.control.type.tsx"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "TypeScript - Property Accessor Keywords",
+            "scope": [
+                "source.ts storage.type.property.ts",
+                "source.tsx storage.type.property.tsx"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "TypeScript - Variable Declaration Keywords",
+            "scope": [
+                "source.ts storage.type.ts",
+                "source.tsx storage.type.tsx"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "TypeScript - Modifiers and Async Keywords",
+            "scope": [
+                "source.ts storage.modifier.ts",
+                "source.tsx storage.modifier.tsx"
+            ],
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "TypeScript - Control Keywords",
+            "scope": [
+                "source.ts keyword.control.ts",
+                "source.tsx keyword.control.tsx",
+                "source.ts keyword.other.ts",
+                "source.tsx keyword.other.tsx"
+            ],
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "TypeScript - Object Creation Keyword",
+            "scope": [
+                "source.ts keyword.control.new.ts",
+                "source.tsx keyword.control.new.tsx",
+                "source.ts keyword.operator.new.ts",
+                "source.tsx keyword.operator.new.tsx"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "TypeScript - Type Operators",
+            "scope": [
+                "source.ts keyword.operator.expression.extends.ts",
+                "source.tsx keyword.operator.expression.extends.tsx",
+                "source.ts keyword.operator.expression.infer.ts",
+                "source.tsx keyword.operator.expression.infer.tsx",
+                "source.ts keyword.operator.expression.is.ts",
+                "source.tsx keyword.operator.expression.is.tsx",
+                "source.ts keyword.operator.expression.keyof.ts",
+                "source.tsx keyword.operator.expression.keyof.tsx",
+                "source.ts keyword.operator.expression.typeof.ts",
+                "source.tsx keyword.operator.expression.typeof.tsx",
+                "source.ts keyword.control.satisfies.ts",
+                "source.tsx keyword.control.satisfies.tsx",
+                "source.ts keyword.control.assert.ts",
+                "source.tsx keyword.control.assert.tsx",
+                "source.ts keyword.operator.type.asserts.ts",
+                "source.tsx keyword.operator.type.asserts.tsx",
+                "source.ts keyword.operator.type.modifier.ts",
+                "source.tsx keyword.operator.type.modifier.tsx"
+            ],
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "TypeScript - Class Names",
+            "scope": [
+                "source.ts entity.name.type.class.ts",
+                "source.tsx entity.name.type.class.tsx",
+                "source.ts entity.other.inherited-class.ts",
+                "source.tsx entity.other.inherited-class.tsx",
+                "source.ts support.class.ts",
+                "source.tsx support.class.tsx"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "TypeScript - Interface and Enum Names",
+            "scope": [
+                "source.ts entity.name.type.interface.ts",
+                "source.tsx entity.name.type.interface.tsx",
+                "source.ts entity.name.type.enum.ts",
+                "source.tsx entity.name.type.enum.tsx"
+            ],
+            "settings": { "foreground": "#0079AA" }
+        },
+        {
+            "name": "TypeScript - Type Alias and Type Names",
+            "scope": [
+                "source.ts entity.name.type.alias.ts",
+                "source.tsx entity.name.type.alias.tsx",
+                "source.ts entity.name.type.ts",
+                "source.tsx entity.name.type.tsx"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "TypeScript - Namespace Names",
+            "scope": [
+                "source.ts entity.name.type.module.ts",
+                "source.tsx entity.name.type.module.tsx"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "TypeScript - Function and Method Names",
+            "scope": [
+                "source.ts entity.name.function.ts",
+                "source.tsx entity.name.function.tsx"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "TypeScript - Property Names",
+            "scope": [
+                "source.ts variable.other.property.ts",
+                "source.tsx variable.other.property.tsx",
+                "source.ts variable.other.object.property.ts",
+                "source.tsx variable.other.object.property.tsx",
+                "source.ts variable.object.property.ts",
+                "source.tsx variable.object.property.tsx",
+                "source.ts support.variable.property.ts",
+                "source.tsx support.variable.property.tsx"
+            ],
+            "settings": { "foreground": "#080808" }
+        },
+        {
+            "name": "TypeScript - Enum Members",
+            "scope": [
+                "source.ts variable.other.enummember.ts",
+                "source.tsx variable.other.enummember.tsx"
+            ],
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "TypeScript - Parameter Names",
+            "scope": [
+                "source.ts variable.parameter.ts",
+                "source.tsx variable.parameter.tsx"
+            ],
+            "settings": { "foreground": "#3F3F3F" }
+        },
+        {
+            "name": "TypeScript - Constant Binding Names",
+            "scope": [
+                "source.ts meta.definition.variable.ts variable.other.constant.ts",
+                "source.tsx meta.definition.variable.tsx variable.other.constant.tsx"
+            ],
+            "settings": { "foreground": "#3F3F3F" }
+        },
+        {
+            "name": "TypeScript - This Super and Arguments",
+            "scope": [
+                "source.ts variable.language.this.ts",
+                "source.tsx variable.language.this.tsx",
+                "source.ts variable.language.super.ts",
+                "source.tsx variable.language.super.tsx",
+                "source.ts variable.language.arguments.ts",
+                "source.tsx variable.language.arguments.tsx"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "TypeScript - Builtin Types",
+            "scope": [
+                "source.ts support.type.builtin.ts",
+                "source.tsx support.type.builtin.tsx",
+                "source.ts support.type.primitive.ts",
+                "source.tsx support.type.primitive.tsx"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "TypeScript - Strings and Templates",
+            "scope": [
+                "source.ts string.quoted.double.ts",
+                "source.tsx string.quoted.double.tsx",
+                "source.ts string.quoted.single.ts",
+                "source.tsx string.quoted.single.tsx",
+                "source.ts string.quoted.alias.ts",
+                "source.tsx string.quoted.alias.tsx",
+                "source.ts string.template.ts",
+                "source.tsx string.template.tsx"
+            ],
+            "settings": { "foreground": "#007F9E" }
+        },
+        {
+            "name": "TypeScript - Regular Expressions",
+            "scope": [
+                "source.ts string.regexp.ts",
+                "source.tsx string.regexp.tsx"
+            ],
+            "settings": { "foreground": "#007F9E" }
+        },
+        {
+            "name": "TypeScript - String Delimiters",
+            "scope": [
+                "source.ts punctuation.definition.string.begin.ts",
+                "source.tsx punctuation.definition.string.begin.tsx",
+                "source.ts punctuation.definition.string.end.ts",
+                "source.tsx punctuation.definition.string.end.tsx",
+                "source.ts punctuation.definition.string.template.begin.ts",
+                "source.tsx punctuation.definition.string.template.begin.tsx",
+                "source.ts punctuation.definition.string.template.end.ts",
+                "source.tsx punctuation.definition.string.template.end.tsx"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "TypeScript - Escapes and Template Markers",
+            "scope": [
+                "source.ts constant.character.escape.ts",
+                "source.tsx constant.character.escape.tsx",
+                "source.ts punctuation.definition.template-expression.begin.ts",
+                "source.tsx punctuation.definition.template-expression.begin.tsx",
+                "source.ts punctuation.definition.template-expression.end.ts",
+                "source.tsx punctuation.definition.template-expression.end.tsx"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "TypeScript - Numbers",
+            "scope": [
+                "source.ts constant.numeric",
+                "source.tsx constant.numeric",
+                "source.ts storage.type.numeric.bigint.ts",
+                "source.tsx storage.type.numeric.bigint.tsx"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "TypeScript - Boolean Literals",
+            "scope": [
+                "source.ts constant.language.boolean.true.ts",
+                "source.tsx constant.language.boolean.true.tsx",
+                "source.ts constant.language.boolean.false.ts",
+                "source.tsx constant.language.boolean.false.tsx"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "TypeScript - Null and Undefined Literals",
+            "scope": [
+                "source.ts constant.language.null.ts",
+                "source.tsx constant.language.null.tsx",
+                "source.ts constant.language.undefined.ts",
+                "source.tsx constant.language.undefined.tsx"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "TypeScript - Other Constants",
+            "scope": [
+                "source.ts constant.language.nan.ts",
+                "source.tsx constant.language.nan.tsx",
+                "source.ts constant.language.infinity.ts",
+                "source.tsx constant.language.infinity.tsx",
+                "source.ts support.constant.ts",
+                "source.tsx support.constant.tsx",
+                "source.ts variable.other.constant.ts",
+                "source.tsx variable.other.constant.tsx"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        {
+            "name": "TypeScript - Decorators",
+            "scope": [
+                "source.ts meta.decorator.ts",
+                "source.tsx meta.decorator.tsx"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "TypeScript - JSX Element Names",
+            "scope": "source.tsx entity.name.tag.tsx",
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "TypeScript - JSX Component Names",
+            "scope": "source.tsx support.class.component.tsx",
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "TypeScript - JSX Attribute Names",
+            "scope": "source.tsx entity.other.attribute-name.tsx",
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "TypeScript - JSX Entities",
+            "scope": "source.tsx constant.character.entity.tsx",
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "TypeScript - Operators",
+            "scope": [
+                "source.ts keyword.operator",
+                "source.tsx keyword.operator"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "TypeScript - Punctuation",
+            "scope": [
+                "source.ts punctuation",
+                "source.tsx punctuation"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "TypeScript - Comment Markers",
+            "scope": [
+                "source.ts comment punctuation.definition.comment.ts",
+                "source.tsx comment punctuation.definition.comment.tsx"
+            ],
+            "settings": { "foreground": "#64748B" }
+        },
+        {
+            "name": "TypeScript - Invalid",
+            "scope": [
+                "source.ts invalid.illegal",
+                "source.tsx invalid.illegal"
+            ],
+            "settings": { "foreground": "#BA1A1A", "fontStyle": "underline" }
+        },
+        // =====================================================
         // JSON / JSONC: properties, literals, punctuation, and comments
         // =====================================================
         {
-            "name": "JSON - Base Text",
+            "name": "JSON / JSONC - Base Text",
             "scope": [
                 "source.json",
                 "source.json.comments"
@@ -1232,7 +2336,7 @@
             }
         },
         {
-            "name": "JSON - Property Names",
+            "name": "JSON / JSONC - Property Names",
             "scope": [
                 "source.json support.type.property-name.json",
                 "source.json.comments support.type.property-name.json.comments"
@@ -1242,7 +2346,7 @@
             }
         },
         {
-            "name": "JSON - Property Punctuation",
+            "name": "JSON / JSONC - Property Punctuation",
             "scope": [
                 "source.json punctuation.support.type.property-name.begin.json",
                 "source.json punctuation.support.type.property-name.end.json",
@@ -1252,7 +2356,7 @@
             "settings": { "foreground": "#9653D6" }
         },
         {
-            "name": "JSON - Strings",
+            "name": "JSON / JSONC - Strings",
             "scope": [
                 "source.json string.quoted.double.json",
                 "source.json.comments string.quoted.double.json.comments"
@@ -1262,7 +2366,7 @@
             }
         },
         {
-            "name": "JSON - String Punctuation",
+            "name": "JSON / JSONC - String Punctuation",
             "scope": [
                 "source.json punctuation.definition.string.begin.json",
                 "source.json punctuation.definition.string.end.json",
@@ -1274,7 +2378,7 @@
             }
         },
         {
-            "name": "JSON - Brackets and Braces",
+            "name": "JSON / JSONC - Brackets and Braces",
             "scope": [
                 "source.json punctuation.definition.array.begin.json",
                 "source.json punctuation.definition.array.end.json",
@@ -1288,7 +2392,7 @@
             "settings": { "foreground": "#9653D6" }
         },
         {
-            "name": "JSON - Numbers",
+            "name": "JSON / JSONC - Numbers",
             "scope": [
                 "source.json constant.numeric.json",
                 "source.json.comments constant.numeric.json.comments"
@@ -1298,7 +2402,7 @@
             }
         },
         {
-            "name": "JSON - Language Constants",
+            "name": "JSON / JSONC - Language Constants",
             "scope": [
                 "source.json constant.language.json",
                 "source.json.comments constant.language.json.comments"
@@ -1308,7 +2412,7 @@
             }
         },
         {
-            "name": "JSON - Escapes",
+            "name": "JSON / JSONC - Escapes",
             "scope": [
                 "source.json constant.character.escape.json",
                 "source.json.comments constant.character.escape.json.comments"
@@ -1330,7 +2434,7 @@
             }
         },
         {
-            "name": "JSON - Separators",
+            "name": "JSON / JSONC - Separators",
             "scope": [
                 "source.json punctuation.separator.array.json",
                 "source.json punctuation.separator.dictionary.key-value.json",
@@ -1344,7 +2448,7 @@
             }
         },
         {
-            "name": "JSON - Invalid",
+            "name": "JSON / JSONC - Invalid",
             "scope": [
                 "source.json invalid.illegal",
                 "source.json.comments invalid.illegal"
@@ -1473,7 +2577,7 @@
             }
         },
         {
-            "name": "Markdown - Code Fences",
+            "name": "Markdown - Code Fence Markers",
             "scope": "text.html.markdown markup.fenced_code.block.markdown punctuation.definition.markdown",
             "settings": {
                 "foreground": "#9653D6"
@@ -1544,7 +2648,7 @@
             }
         },
         {
-            "name": "Markdown - Lists",
+            "name": "Markdown - List Markers",
             "scope": "text.html.markdown punctuation.definition.list.begin.markdown",
             "settings": {
                 "foreground": "#9653D6"
@@ -1567,7 +2671,7 @@
             }
         },
         {
-            "name": "Markdown - Tables",
+            "name": "Markdown - Table Delimiters",
             "scope": [
                 "text.html.markdown punctuation.definition.table.markdown",
                 "text.html.markdown punctuation.separator.table.markdown"
@@ -1615,6 +2719,8 @@
         // =====================================================
         // C#: Roslyn semantic highlighting
         // =====================================================
+        // Keep generic keyword tokens unstyled so TextMate can distinguish
+        // modifiers, type keywords, literals, and individual control keywords.
         "namespace:csharp": "#9653D6",
         "module:csharp": "#9653D6",
         "class:csharp": "#009451",
@@ -1626,6 +2732,7 @@
         "delegate:csharp": "#9653D6",
         "type:csharp": "#009451",
         "typeParameter:csharp": "#009451",
+        "function:csharp": "#9653D6",
         "method:csharp": "#9653D6",
         "extensionMethod:csharp": "#9653D6",
         "property:csharp": "#080808",
@@ -1635,9 +2742,9 @@
         "variable:csharp": "#3F3F3F",
         "constant:csharp": "#A17900",
         "enumMember:csharp": "#1A6CEE",
-        "controlKeyword:csharp": "#1A6CEE",
         "operator:csharp": "#9653D6",
         "operatorOverloaded:csharp": "#9653D6",
+        "macro:csharp": "#9653D6",
         "string:csharp": "#007F9E",
         "stringVerbatim:csharp": "#007F9E",
         "stringEscapeCharacter:csharp": "#9653D6",
@@ -1663,20 +2770,116 @@
         "regexQuantifier:csharp": "#9653D6",
         "regexGrouping:csharp": "#9653D6",
         "regexAlternation:csharp": "#9653D6",
-        "regexText:csharp": "#0079AA",
+        "regexText:csharp": "#007F9E",
         "regexSelfEscapedCharacter:csharp": "#9653D6",
         "regexOtherEscape:csharp": "#9653D6",
         "jsonComment:csharp": "#64748B",
         "jsonNumber:csharp": "#A17900",
         "jsonString:csharp": "#007F9E",
         "jsonKeyword:csharp": "#9653D6",
-        "jsonText:csharp": "#0B1C30",
-        "jsonOperator:csharp": "#3F3F3F",
-        "jsonPunctuation:csharp": "#3F3F3F",
-        "jsonArray:csharp": "#3F3F3F",
-        "jsonObject:csharp": "#3F3F3F",
+        "jsonText:csharp": "#007F9E",
+        "jsonOperator:csharp": "#9653D6",
+        "jsonPunctuation:csharp": "#9653D6",
+        "jsonArray:csharp": "#9653D6",
+        "jsonObject:csharp": "#9653D6",
         "jsonPropertyName:csharp": "#009451",
         "jsonConstructorName:csharp": "#009451",
-        "excludedCode:csharp": "#94A3B8"
+        "excludedCode:csharp": "#94A3B8",
+        // =====================================================
+        // Python: Pylance semantic highlighting
+        // =====================================================
+        // Keep generic keyword tokens unstyled so TextMate can color
+        // imports, declarations, and control flow independently.
+        "module:python": "#9653D6",
+        "class:python": "#009451",
+        "class.builtin:python": "#A17900",
+        "enum:python": "#0079AA",
+        "type:python": "#009451",
+        "typeParameter:python": "#009451",
+        "function:python": "#9653D6",
+        "member:python": "#9653D6",
+        "method:python": "#9653D6",
+        "magicFunction:python": "#9653D6",
+        "function.decorator:python": "#009451",
+        "class.decorator:python": "#009451",
+        "property:python": "#080808",
+        "parameter:python": "#3F3F3F",
+        "selfParameter:python": "#9653D6",
+        "clsParameter:python": "#9653D6",
+        "variable:python": "#3F3F3F",
+        "variable.readonly:python": "#A17900",
+        "constant:python": "#A17900",
+        "builtinConstant:python": "#A17900",
+        "enumMember:python": "#1A6CEE",
+        "operator:python": "#9653D6",
+        "intrinsic:python": "#9653D6",
+        "number:python": "#A17900",
+        "string:python": "#007F9E",
+        "string.escapeCharacter:python": "#9653D6",
+        "comment:python": "#64748B",
+        "parenthesis:python": "#9653D6",
+        "bracket:python": "#9653D6",
+        "curlybrace:python": "#9653D6",
+        "colon:python": "#9653D6",
+        "semicolon:python": "#9653D6",
+        "arrow:python": "#9653D6",
+        "*.typeHintComment:python": "#64748B",
+        "*.invalid:python": "#BA1A1A",
+        // =====================================================
+        // JavaScript: semantic highlighting
+        // =====================================================
+        // Leave generic keywords to TextMate so import, control, and new
+        // keep their distinct colors.
+        "namespace:javascript": "#9653D6",
+        "class:javascript": "#009451",
+        "enum:javascript": "#0079AA",
+        "type:javascript": "#009451",
+        "typeParameter:javascript": "#009451",
+        "function:javascript": "#9653D6",
+        "method:javascript": "#9653D6",
+        "property:javascript": "#080808",
+        "parameter:javascript": "#3F3F3F",
+        "enumMember:javascript": "#1A6CEE",
+        "string:javascript": "#007F9E",
+        "number:javascript": "#A17900",
+        "regexp:javascript": "#007F9E",
+        "operator:javascript": "#9653D6",
+        "comment:javascript": "#64748B",
+        // =====================================================
+        // TypeScript and TSX: semantic names and literals
+        // =====================================================
+        // Leave keywords and operators to TextMate so type operators,
+        // declarations, and control flow retain their distinct colors.
+        "namespace:typescript": "#9653D6",
+        "class:typescript": "#009451",
+        "interface:typescript": "#0079AA",
+        "enum:typescript": "#0079AA",
+        "type:typescript": "#009451",
+        "typeParameter:typescript": "#009451",
+        "function:typescript": "#9653D6",
+        "method:typescript": "#9653D6",
+        "property:typescript": "#080808",
+        "parameter:typescript": "#3F3F3F",
+        "enumMember:typescript": "#1A6CEE",
+        "decorator:typescript": "#009451",
+        "string:typescript": "#007F9E",
+        "number:typescript": "#A17900",
+        "regexp:typescript": "#007F9E",
+        "comment:typescript": "#64748B",
+        "namespace:typescriptreact": "#9653D6",
+        "class:typescriptreact": "#009451",
+        "interface:typescriptreact": "#0079AA",
+        "enum:typescriptreact": "#0079AA",
+        "type:typescriptreact": "#009451",
+        "typeParameter:typescriptreact": "#009451",
+        "function:typescriptreact": "#9653D6",
+        "method:typescriptreact": "#9653D6",
+        "parameter:typescriptreact": "#3F3F3F",
+        "enumMember:typescriptreact": "#1A6CEE",
+        "decorator:typescriptreact": "#009451",
+        "string:typescriptreact": "#007F9E",
+        "number:typescriptreact": "#A17900",
+        "regexp:typescriptreact": "#007F9E",
+        "comment:typescriptreact": "#64748B"
     }
 }

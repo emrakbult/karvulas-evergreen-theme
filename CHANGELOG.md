@@ -2,6 +2,24 @@
 
 ## Unreleased
 
+## 0.4.0 - 2026-09-27
+
+### Added
+
+- Added dedicated Python syntax and semantic colors for imports, declarations, types, functions, literals, and punctuation.
+- Added JavaScript and TypeScript/TSX palettes for declarations, classes, types, functions, properties, literals, and JSX.
+- Added HTML colors for tags, attributes, values, entities, declarations, and comments.
+- Added CSS colors for selectors, properties, values, functions, at-rules, colors, and units.
+
+### Changed
+
+- Refined C# token categories and semantic colors, including gold boolean literals to match the `bool` keyword.
+- Narrowed JavaScript and TypeScript method coloring to function names and distinguished getter and setter keywords from property names.
+- Aligned common JavaScript and TypeScript variable declarations with the green C# declaration palette.
+- Clarified syntax rule names across the existing language palettes.
+- Made the chat request bubble backgrounds and find-in-selection border translucent while preserving their appearance on white surfaces.
+- Updated the README installation steps for Visual Studio Marketplace distribution.
+
 ## 0.3.0 - 2026-09-26
 
 ### Added
