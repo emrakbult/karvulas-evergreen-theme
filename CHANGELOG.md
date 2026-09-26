@@ -2,6 +2,22 @@
 
 ## Unreleased
 
+## 0.3.0 - 2026-09-26
+
+### Added
+
+- Added targeted C# TextMate rules for modifiers, type keywords, references, and control keywords.
+- Added punctuation rules for AXAML, XML, JSON/JSONC, and Markdown, plus a shared cyan fallback for quoted strings.
+- Added green text selection styling to Markdown Preview.
+
+### Changed
+
+- Refined the existing AXAML, XML, C#, and JSON/JSONC palettes with coordinated green, blue, purple, cyan, and gold syntax colors.
+- Harmonized Evergreen accents across the workbench, terminal ANSI palette, and Markdown Preview code highlighting.
+- Smoothed the green gradient for Markdown headings in both the editor and Preview.
+- Refined list selection colors with dark text on active items, green text on inactive selections, and green focus outlines.
+- Expanded the README with theme highlights, current language palettes, installation guidance, and feedback information.
+
 ## 0.2.0 - 2026-09-25
 
 ### Added
