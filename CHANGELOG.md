@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 0.4.2 - 2026-09-28
+
+### Added
+
+- Added a 128×128 PNG extension icon for VS Code and the Visual Studio Marketplace.
+
 ## 0.4.1 - 2026-09-27
 
 ### Fixed
