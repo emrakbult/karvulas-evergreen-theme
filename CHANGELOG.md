@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## 0.5.0 - 2026-09-30
+
+### Added
+
+- Added CSV language detection and five repeating column colors, with matching colors for first-row headers and values.
+- Colored CSV field separators purple while keeping commas inside quoted fields in the field color.
+
 ## 0.4.2 - 2026-09-28
 
 ### Added

@@ -1,0 +1,173 @@
+{
+    "name": "Karvulas CSV",
+    "scopeName": "source.csv.karvulas",
+    "patterns": [
+        {
+            "name": "meta.record.header.csv",
+            "begin": "\\A(?=.)",
+            "end": "$",
+            "patterns": [
+                {
+                    "include": "#column-1"
+                }
+            ]
+        },
+        {
+            "name": "meta.record.data.csv",
+            "begin": "^(?=.)",
+            "end": "$",
+            "patterns": [
+                {
+                    "include": "#column-1"
+                }
+            ]
+        }
+    ],
+    "repository": {
+        "column-1": {
+            "patterns": [
+                {
+                    "begin": "((?:\"(?:[^\"]|\"\")*\"|[^,\\r\\n]*))(,)",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "meta.column.1.csv"
+                        },
+                        "2": {
+                            "name": "punctuation.separator.comma.csv"
+                        }
+                    },
+                    "end": "$",
+                    "patterns": [
+                        {
+                            "include": "#column-2"
+                        }
+                    ]
+                },
+                {
+                    "match": "((?:\"(?:[^\"]|\"\")*\"|[^,\\r\\n]+))(?=\\r?$)",
+                    "captures": {
+                        "1": {
+                            "name": "meta.column.1.csv"
+                        }
+                    }
+                }
+            ]
+        },
+        "column-2": {
+            "patterns": [
+                {
+                    "begin": "((?:\"(?:[^\"]|\"\")*\"|[^,\\r\\n]*))(,)",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "meta.column.2.csv"
+                        },
+                        "2": {
+                            "name": "punctuation.separator.comma.csv"
+                        }
+                    },
+                    "end": "$",
+                    "patterns": [
+                        {
+                            "include": "#column-3"
+                        }
+                    ]
+                },
+                {
+                    "match": "((?:\"(?:[^\"]|\"\")*\"|[^,\\r\\n]+))(?=\\r?$)",
+                    "captures": {
+                        "1": {
+                            "name": "meta.column.2.csv"
+                        }
+                    }
+                }
+            ]
+        },
+        "column-3": {
+            "patterns": [
+                {
+                    "begin": "((?:\"(?:[^\"]|\"\")*\"|[^,\\r\\n]*))(,)",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "meta.column.3.csv"
+                        },
+                        "2": {
+                            "name": "punctuation.separator.comma.csv"
+                        }
+                    },
+                    "end": "$",
+                    "patterns": [
+                        {
+                            "include": "#column-4"
+                        }
+                    ]
+                },
+                {
+                    "match": "((?:\"(?:[^\"]|\"\")*\"|[^,\\r\\n]+))(?=\\r?$)",
+                    "captures": {
+                        "1": {
+                            "name": "meta.column.3.csv"
+                        }
+                    }
+                }
+            ]
+        },
+        "column-4": {
+            "patterns": [
+                {
+                    "begin": "((?:\"(?:[^\"]|\"\")*\"|[^,\\r\\n]*))(,)",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "meta.column.4.csv"
+                        },
+                        "2": {
+                            "name": "punctuation.separator.comma.csv"
+                        }
+                    },
+                    "end": "$",
+                    "patterns": [
+                        {
+                            "include": "#column-5"
+                        }
+                    ]
+                },
+                {
+                    "match": "((?:\"(?:[^\"]|\"\")*\"|[^,\\r\\n]+))(?=\\r?$)",
+                    "captures": {
+                        "1": {
+                            "name": "meta.column.4.csv"
+                        }
+                    }
+                }
+            ]
+        },
+        "column-5": {
+            "patterns": [
+                {
+                    "begin": "((?:\"(?:[^\"]|\"\")*\"|[^,\\r\\n]*))(,)",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "meta.column.5.csv"
+                        },
+                        "2": {
+                            "name": "punctuation.separator.comma.csv"
+                        }
+                    },
+                    "end": "$",
+                    "patterns": [
+                        {
+                            "include": "#column-1"
+                        }
+                    ]
+                },
+                {
+                    "match": "((?:\"(?:[^\"]|\"\")*\"|[^,\\r\\n]+))(?=\\r?$)",
+                    "captures": {
+                        "1": {
+                            "name": "meta.column.5.csv"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

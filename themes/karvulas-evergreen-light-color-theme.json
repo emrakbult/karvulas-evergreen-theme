@@ -2463,6 +2463,59 @@
             }
         },
         // =====================================================
+        // CSV: shared header and data colors by column
+        // =====================================================
+        {
+            "name": "CSV - Base Text",
+            "scope": "source.csv.karvulas",
+            "settings": { "foreground": "#3F3F3F" }
+        },
+        {
+            "name": "CSV - Separators",
+            "scope": "source.csv.karvulas punctuation.separator.comma.csv",
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "CSV - Column 1",
+            "scope": [
+                "source.csv.karvulas meta.record.header.csv meta.column.1.csv",
+                "source.csv.karvulas meta.record.data.csv meta.column.1.csv"
+            ],
+            "settings": { "foreground": "#009451" }
+        },
+        {
+            "name": "CSV - Column 2",
+            "scope": [
+                "source.csv.karvulas meta.record.header.csv meta.column.2.csv",
+                "source.csv.karvulas meta.record.data.csv meta.column.2.csv"
+            ],
+            "settings": { "foreground": "#1A6CEE" }
+        },
+        {
+            "name": "CSV - Column 3",
+            "scope": [
+                "source.csv.karvulas meta.record.header.csv meta.column.3.csv",
+                "source.csv.karvulas meta.record.data.csv meta.column.3.csv"
+            ],
+            "settings": { "foreground": "#9653D6" }
+        },
+        {
+            "name": "CSV - Column 4",
+            "scope": [
+                "source.csv.karvulas meta.record.header.csv meta.column.4.csv",
+                "source.csv.karvulas meta.record.data.csv meta.column.4.csv"
+            ],
+            "settings": { "foreground": "#007F9E" }
+        },
+        {
+            "name": "CSV - Column 5",
+            "scope": [
+                "source.csv.karvulas meta.record.header.csv meta.column.5.csv",
+                "source.csv.karvulas meta.record.data.csv meta.column.5.csv"
+            ],
+            "settings": { "foreground": "#A17900" }
+        },
+        // =====================================================
         // MARKDOWN: headings, emphasis, links, and code blocks
         // =====================================================
         {

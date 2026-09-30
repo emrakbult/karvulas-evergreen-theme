@@ -27,7 +27,8 @@ Karvulas Evergreen Light uses dedicated syntax palettes for individual languages
 - **HTML:** Blue elements, green attributes, cyan values, purple punctuation and entities, gold doctype declarations, and slate comments
 - **CSS:** Green properties and class selectors, blue element and ID selectors, purple functions and pseudo selectors, cyan colors and strings, and gold numbers
 - **JSON / JSONC:** Green keys, cyan strings, gold numbers, purple constants and punctuation, with slate comments in JSONC
-- **Markdown:** Graduated green headings, colored emphasis, gold inline code, blue links, and purple punctuation for lists, quotes, tables, and code fences
+- **CSV:** Five repeating column colors for comma-separated files, with each first-row header matching its column's values
+- **Markdown:** Graduated green headings, green heading and list markers, colored emphasis, gold inline code, blue links, and green table pipes
 - **Other languages:** Quoted strings use the shared cyan color; other text uses the theme's base colors until a dedicated palette is added
 
 ## Installation
