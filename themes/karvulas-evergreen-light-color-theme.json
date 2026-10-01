@@ -1567,7 +1567,7 @@
         {
             "name": "Python - Import Keywords",
             "scope": "source.python keyword.control.import.python",
-            "settings": { "foreground": "#009451" }
+            "settings": { "foreground": "#9653D6" }
         },
         {
             "name": "Python - Declaration Keywords",
@@ -1577,7 +1577,7 @@
                 "source.python storage.type.function.lambda.python",
                 "source.python storage.type.class.python"
             ],
-            "settings": { "foreground": "#009451" }
+            "settings": { "foreground": "#9653D6" }
         },
         {
             "name": "Python - Control Keywords",
@@ -1595,7 +1595,7 @@
                 "source.python support.function.builtin.python",
                 "source.python support.function.magic.python"
             ],
-            "settings": { "foreground": "#9653D6" }
+            "settings": { "foreground": "#009451" }
         },
         {
             "name": "Python - Class Names",
@@ -1604,12 +1604,12 @@
                 "source.python entity.other.inherited-class.python",
                 "source.python support.type.exception.python"
             ],
-            "settings": { "foreground": "#009451" }
+            "settings": { "foreground": "#9653D6" }
         },
         {
             "name": "Python - Decorators",
             "scope": "source.python entity.name.function.decorator.python",
-            "settings": { "foreground": "#009451" }
+            "settings": { "foreground": "#9653D6" }
         },
         {
             "name": "Python - Self and Cls",
@@ -1619,12 +1619,12 @@
                 "source.python variable.parameter.function.language.special.self.python",
                 "source.python variable.parameter.function.language.special.cls.python"
             ],
-            "settings": { "foreground": "#9653D6" }
+            "settings": { "foreground": "#009451" }
         },
         {
             "name": "Python - Magic Variables",
             "scope": "source.python support.variable.magic.python",
-            "settings": { "foreground": "#9653D6" }
+            "settings": { "foreground": "#009451" }
         },
         {
             "name": "Python - Parameter Names",
@@ -2868,29 +2868,29 @@
         // =====================================================
         // Keep generic keyword tokens unstyled so TextMate can color
         // imports, declarations, and control flow independently.
-        "module:python": "#9653D6",
-        "class:python": "#009451",
+        "module:python": "#009451",
+        "class:python": "#9653D6",
         "class.builtin:python": "#A17900",
         "enum:python": "#0079AA",
-        "type:python": "#009451",
-        "typeParameter:python": "#009451",
-        "function:python": "#9653D6",
-        "member:python": "#9653D6",
-        "method:python": "#9653D6",
-        "magicFunction:python": "#9653D6",
-        "function.decorator:python": "#009451",
-        "class.decorator:python": "#009451",
+        "type:python": "#9653D6",
+        "typeParameter:python": "#9653D6",
+        "function:python": "#009451",
+        "member:python": "#009451",
+        "method:python": "#009451",
+        "magicFunction:python": "#009451",
+        "function.decorator:python": "#9653D6",
+        "class.decorator:python": "#9653D6",
         "property:python": "#080808",
         "parameter:python": "#3F3F3F",
-        "selfParameter:python": "#9653D6",
-        "clsParameter:python": "#9653D6",
+        "selfParameter:python": "#009451",
+        "clsParameter:python": "#009451",
         "variable:python": "#3F3F3F",
         "variable.readonly:python": "#A17900",
         "constant:python": "#A17900",
         "builtinConstant:python": "#A17900",
         "enumMember:python": "#1A6CEE",
         "operator:python": "#9653D6",
-        "intrinsic:python": "#9653D6",
+        "intrinsic:python": "#009451",
         "number:python": "#A17900",
         "string:python": "#007F9E",
         "string.escapeCharacter:python": "#9653D6",

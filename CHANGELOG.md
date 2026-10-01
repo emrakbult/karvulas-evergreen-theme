@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 0.5.1 - 2026-10-01
+
+### Changed
+
+- Rebalanced Python colors with purple imports, declarations, and classes, plus green modules and functions.
+
 ## 0.5.0 - 2026-09-30
 
 ### Added

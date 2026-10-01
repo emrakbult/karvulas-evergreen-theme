@@ -21,7 +21,7 @@ Karvulas Evergreen Light uses dedicated syntax palettes for individual languages
 - **Avalonia XAML (AXAML):** Blue elements, green attributes, purple namespaces and punctuation, cyan values, and slate comments
 - **XML:** Coordinated colors for elements, attributes, namespaces, values, entities, declarations, comments, and CDATA
 - **C#:** Green directives and class names, blue modifiers and control keywords, purple methods and punctuation, cyan strings, and gold numbers
-- **Python:** Green imports, declarations, and classes; blue control keywords; purple functions; cyan strings; and gold built-in types, numbers, and language constants
+- **Python:** Purple imports, declarations, and classes; blue control keywords; green modules and functions; cyan strings; and gold built-in types, numbers, and language constants
 - **JavaScript:** Green module and variable declarations, blue control keywords and modifiers, purple functions, cyan strings, and gold numbers and booleans
 - **TypeScript / TSX:** JavaScript-coordinated colors for types, interfaces, enums, decorators, and JSX elements and attributes
 - **HTML:** Blue elements, green attributes, cyan values, purple punctuation and entities, gold doctype declarations, and slate comments
