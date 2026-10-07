@@ -1547,6 +1547,192 @@
             }
         },
         // =====================================================
+        // Rust: declarations, types, lifetimes, literals, and punctuation
+        // =====================================================
+        {
+            "name": "Rust - Base Text",
+            "scope": "source.rust",
+            "settings": {
+                "foreground": "#3F3F3F"
+            }
+        },
+        {
+            "name": "Rust - Comments",
+            "scope": [
+                "source.rust comment",
+                "source.rust punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": "#64748B"
+            }
+        },
+        {
+            "name": "Rust - Declaration and Module Keywords",
+            "scope": [
+                "source.rust keyword.other",
+                "source.rust keyword.declaration",
+                "source.rust storage.type"
+            ],
+            "settings": {
+                "foreground": "#009451"
+            }
+        },
+        {
+            "name": "Rust - Modifiers",
+            "scope": "source.rust storage.modifier",
+            "settings": {
+                "foreground": "#9653D6"
+            }
+        },
+        {
+            "name": "Rust - Control Keywords",
+            "scope": "source.rust keyword.control",
+            "settings": {
+                "foreground": "#1A6CEE"
+            }
+        },
+        {
+            "name": "Rust - Namespaces",
+            "scope": [
+                "source.rust entity.name.namespace",
+                "source.rust entity.name.module"
+            ],
+            "settings": {
+                "foreground": "#1A6CEE"
+            }
+        },
+        {
+            "name": "Rust - Type Names",
+            "scope": "source.rust entity.name.type",
+            "settings": {
+                "foreground": "#009451"
+            }
+        },
+        {
+            "name": "Rust - Primitive Types",
+            "scope": [
+                "source.rust entity.name.type.numeric",
+                "source.rust entity.name.type.primitive"
+            ],
+            "settings": {
+                "foreground": "#A17900"
+            }
+        },
+        {
+            "name": "Rust - Enum Constructors",
+            "scope": [
+                "source.rust entity.name.type.option",
+                "source.rust entity.name.type.result"
+            ],
+            "settings": {
+                "foreground": "#9653D6"
+            }
+        },
+        {
+            "name": "Rust - Functions and Macros",
+            "scope": [
+                "source.rust entity.name.function",
+                "source.rust entity.name.type.macro"
+            ],
+            "settings": {
+                "foreground": "#1A6CEE"
+            }
+        },
+        {
+            "name": "Rust - Attributes",
+            "scope": "source.rust meta.attribute.rust",
+            "settings": {
+                "foreground": "#009451"
+            }
+        },
+        {
+            "name": "Rust - Lifetimes",
+            "scope": "source.rust entity.name.type.lifetime",
+            "settings": {
+                "foreground": "#1A6CEE"
+            }
+        },
+        {
+            "name": "Rust - Variables and Parameters",
+            "scope": [
+                "source.rust variable.other",
+                "source.rust variable.parameter"
+            ],
+            "settings": {
+                "foreground": "#3F3F3F"
+            }
+        },
+        {
+            "name": "Rust - Self and Super",
+            "scope": "source.rust variable.language",
+            "settings": {
+                "foreground": "#1A6CEE"
+            }
+        },
+        {
+            "name": "Rust - Strings and Characters",
+            "scope": "source.rust string",
+            "settings": {
+                "foreground": "#007F9E"
+            }
+        },
+        {
+            "name": "Rust - Escapes and Format Markers",
+            "scope": [
+                "source.rust constant.character.escape",
+                "source.rust meta.interpolation"
+            ],
+            "settings": {
+                "foreground": "#1A6CEE"
+            }
+        },
+        {
+            "name": "Rust - Numbers and Booleans",
+            "scope": [
+                "source.rust constant.numeric",
+                "source.rust constant.language.bool"
+            ],
+            "settings": {
+                "foreground": "#A17900"
+            }
+        },
+        {
+            "name": "Rust - Named Constants",
+            "scope": "source.rust constant.other.caps",
+            "settings": {
+                "foreground": "#A17900"
+            }
+        },
+        {
+            "name": "Rust - Operators",
+            "scope": "source.rust keyword.operator",
+            "settings": {
+                "foreground": "#1A6CEE"
+            }
+        },
+        {
+            "name": "Rust - Punctuation",
+            "scope": "source.rust punctuation",
+            "settings": {
+                "foreground": "#1A6CEE"
+            }
+        },
+        {
+            "name": "Rust - Comment Markers",
+            "scope": "source.rust comment punctuation.definition.comment",
+            "settings": {
+                "foreground": "#64748B"
+            }
+        },
+        {
+            "name": "Rust - Invalid",
+            "scope": "source.rust invalid.illegal",
+            "settings": {
+                "foreground": "#BA1A1A",
+                "fontStyle": "underline"
+            }
+        },
+        // =====================================================
         // Python: keywords, names, literals, and punctuation
         // =====================================================
         {
@@ -2463,6 +2649,109 @@
             }
         },
         // =====================================================
+        // TOML: keys, tables, values, dates, and punctuation
+        // =====================================================
+        {
+            "name": "TOML - Base Text",
+            "scope": "source.toml",
+            "settings": {
+                "foreground": "#3F3F3F"
+            }
+        },
+        {
+            "name": "TOML - Comments",
+            "scope": [
+                "source.toml comment",
+                "source.toml punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": "#64748B"
+            }
+        },
+        {
+            "name": "TOML - Keys",
+            "scope": "source.toml support.type.property-name",
+            "settings": {
+                "foreground": "#009451"
+            }
+        },
+        {
+            "name": "TOML - Table Names",
+            "scope": [
+                "source.toml support.type.property-name.table",
+                "source.toml support.type.property-name.array"
+            ],
+            "settings": {
+                "foreground": "#1A6CEE"
+            }
+        },
+        {
+            "name": "TOML - Strings",
+            "scope": "source.toml string",
+            "settings": {
+                "foreground": "#007F9E"
+            }
+        },
+        {
+            "name": "TOML - Numbers and Booleans",
+            "scope": [
+                "source.toml constant.numeric",
+                "source.toml constant.language.boolean"
+            ],
+            "settings": {
+                "foreground": "#A17900"
+            }
+        },
+        {
+            "name": "TOML - Dates and Times",
+            "scope": "source.toml constant.other.time",
+            "settings": {
+                "foreground": "#A17900"
+            }
+        },
+        {
+            "name": "TOML - Escapes",
+            "scope": "source.toml constant.character.escape",
+            "settings": {
+                "foreground": "#9653D6"
+            }
+        },
+        {
+            "name": "TOML - Punctuation and Operators",
+            "scope": [
+                "source.toml punctuation",
+                "source.toml keyword.operator"
+            ],
+            "settings": {
+                "foreground": "#9653D6"
+            }
+        },
+        {
+            "name": "TOML - Comment Directives",
+            "scope": [
+                "source.toml meta.preprocessor",
+                "source.toml punctuation.definition.meta.preprocessor"
+            ],
+            "settings": {
+                "foreground": "#64748B"
+            }
+        },
+        {
+            "name": "TOML - Comment Markers",
+            "scope": "source.toml comment punctuation.definition.comment",
+            "settings": {
+                "foreground": "#64748B"
+            }
+        },
+        {
+            "name": "TOML - Invalid",
+            "scope": "source.toml invalid.illegal",
+            "settings": {
+                "foreground": "#BA1A1A",
+                "fontStyle": "underline"
+            }
+        },
+        // =====================================================
         // CSV: shared header and data colors by column
         // =====================================================
         {
@@ -2863,6 +3152,84 @@
         "jsonPropertyName:csharp": "#009451",
         "jsonConstructorName:csharp": "#009451",
         "excludedCode:csharp": "#94A3B8",
+        // =====================================================
+        // Rust: rust-analyzer semantic highlighting
+        // =====================================================
+        // Leave generic keywords to TextMate to preserve separate colors
+        // for declarations, modifiers, and control flow.
+        "keyword.controlFlow:rust": "#1A6CEE",
+        "namespace:rust": "#1A6CEE",
+        "module:rust": "#1A6CEE",
+        "function:rust": "#1A6CEE",
+        "method:rust": "#1A6CEE",
+        "macro:rust": "#1A6CEE",
+        "procMacro:rust": "#1A6CEE",
+        "toolModule:rust": "#1A6CEE",
+        "selfKeyword:rust": "#1A6CEE",
+        "lifetime:rust": "#1A6CEE",
+        "label:rust": "#1A6CEE",
+        "escapeSequence:rust": "#1A6CEE",
+        "formatSpecifier:rust": "#1A6CEE",
+        "operator:rust": "#1A6CEE",
+        "arithmetic:rust": "#1A6CEE",
+        "bitwise:rust": "#1A6CEE",
+        "comparison:rust": "#1A6CEE",
+        "logical:rust": "#1A6CEE",
+        "negation:rust": "#1A6CEE",
+        "punctuation:rust": "#1A6CEE",
+        "attributeBracket:rust": "#1A6CEE",
+        "angle:rust": "#1A6CEE",
+        "brace:rust": "#1A6CEE",
+        "bracket:rust": "#1A6CEE",
+        "parenthesis:rust": "#1A6CEE",
+        "colon:rust": "#1A6CEE",
+        "comma:rust": "#1A6CEE",
+        "dot:rust": "#1A6CEE",
+        "semicolon:rust": "#1A6CEE",
+        "macroBang:rust": "#1A6CEE",
+        "variable.callable:rust": "#1A6CEE",
+        "class:rust": "#009451",
+        "type:rust": "#009451",
+        "struct:rust": "#009451",
+        "enum:rust": "#009451",
+        "enumMember:rust": "#9653D6",
+        "interface:rust": "#009451",
+        "trait:rust": "#009451",
+        "typeAlias:rust": "#009451",
+        "union:rust": "#009451",
+        "typeParameter:rust": "#009451",
+        "selfTypeKeyword:rust": "#009451",
+        "attribute:rust": "#009451",
+        "decorator:rust": "#009451",
+        "builtinAttribute:rust": "#009451",
+        "derive:rust": "#009451",
+        "deriveHelper:rust": "#009451",
+        "builtinType:rust": "#A17900",
+        "constParameter:rust": "#A17900",
+        "constant:rust": "#A17900",
+        "const:rust": "#A17900",
+        "static:rust": "#A17900",
+        "variable.constant:rust": "#A17900",
+        "property.constant:rust": "#A17900",
+        "number:rust": "#A17900",
+        "boolean:rust": "#A17900",
+        "field:rust": "#3F3F3F",
+        "variable:rust": "#3F3F3F",
+        "parameter:rust": "#3F3F3F",
+        "property:rust": "#080808",
+        "string:rust": "#007F9E",
+        "character:rust": "#007F9E",
+        "comment:rust": "#64748B",
+        "invalidEscapeSequence:rust": {
+            "foreground": "#BA1A1A",
+            "underline": true
+        },
+        // =====================================================
+        // TOML: Taplo semantic highlighting
+        // =====================================================
+        // These tokens identify keys with array or inline-table values.
+        "tomlArrayKey:toml": "#009451",
+        "tomlTableKey:toml": "#009451",
         // =====================================================
         // Python: Pylance semantic highlighting
         // =====================================================

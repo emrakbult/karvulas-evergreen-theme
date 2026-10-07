@@ -21,15 +21,19 @@ Karvulas Evergreen Light uses dedicated syntax palettes for individual languages
 - **Avalonia XAML (AXAML):** Blue elements, green attributes, purple namespaces and punctuation, cyan values, and slate comments
 - **XML:** Coordinated colors for elements, attributes, namespaces, values, entities, declarations, comments, and CDATA
 - **C#:** Green directives and class names, blue modifiers and control keywords, purple methods and punctuation, cyan strings, and gold numbers
+- **Rust:** Green declarations, including `static`, and type names; purple modifiers; blue control keywords, functions, macros, lifetimes, and punctuation; cyan strings; and gold primitive types, numbers, and booleans, with matching rust-analyzer semantic colors
 - **Python:** Purple imports, declarations, and classes; blue control keywords; green modules and functions; cyan strings; and gold built-in types, numbers, and language constants
 - **JavaScript:** Green module and variable declarations, blue control keywords and modifiers, purple functions, cyan strings, and gold numbers and booleans
 - **TypeScript / TSX:** JavaScript-coordinated colors for types, interfaces, enums, decorators, and JSX elements and attributes
 - **HTML:** Blue elements, green attributes, cyan values, purple punctuation and entities, gold doctype declarations, and slate comments
 - **CSS:** Green properties and class selectors, blue element and ID selectors, purple functions and pseudo selectors, cyan colors and strings, and gold numbers
 - **JSON / JSONC:** Green keys, cyan strings, gold numbers, purple constants and punctuation, with slate comments in JSONC
+- **TOML:** Green keys, blue table names, cyan strings, gold numbers, booleans, and dates, purple punctuation, and slate comments, with matching Taplo semantic key colors
 - **CSV:** Five repeating column colors for comma-separated files, with each first-row header matching its column's values
 - **Markdown:** Graduated green headings, green heading and list markers, colored emphasis, gold inline code, blue links, and green table pipes
 - **Other languages:** Quoted strings use the shared cyan color; other text uses the theme's base colors until a dedicated palette is added
+
+TOML syntax highlighting is included for `.toml`, `Cargo.lock`, and `uv.lock` files. **Even Better TOML** (Taplo) is optional for validation, completion, and formatting; its semantic key colors also match the theme.
 
 ## Installation
 
@@ -45,3 +49,5 @@ Found an issue or have a suggestion? Open an issue on the [GitHub repository](ht
 ## License
 
 Karvulas Evergreen Theme is available under the [MIT License](LICENSE).
+
+The bundled TOML grammar is from Taplo; see [third-party notices](THIRD_PARTY_NOTICES.md).

@@ -2,7 +2,7 @@
     "name": "karvulas-evergreen-theme",
     "displayName": "Karvulas Evergreen Theme",
     "description": "A light Visual Studio Code theme with language-specific syntax colors.",
-    "version": "0.5.1",
+    "version": "0.6.0",
     "icon": "logo.png",
     "publisher": "Karvulas",
     "license": "MIT",
@@ -32,6 +32,13 @@
                 "aliases": ["Karvulas CSV"],
                 "extensions": [".csv"],
                 "mimetypes": ["text/csv"]
+            },
+            {
+                "id": "toml",
+                "aliases": ["TOML"],
+                "extensions": [".toml"],
+                "filenames": ["Cargo.lock", "uv.lock"],
+                "configuration": "./syntaxes/karvulas-toml-language-configuration.json"
             }
         ],
         "grammars": [
@@ -39,6 +46,16 @@
                 "language": "karvulas-csv",
                 "scopeName": "source.csv.karvulas",
                 "path": "./syntaxes/karvulas-csv.tmLanguage.json"
+            },
+            {
+                "scopeName": "karvulas.rust.keywords",
+                "path": "./syntaxes/karvulas-rust-keywords.tmLanguage.json",
+                "injectTo": ["source.rust"]
+            },
+            {
+                "language": "toml",
+                "scopeName": "source.toml",
+                "path": "./syntaxes/karvulas-toml.tmLanguage.json"
             }
         ],
         "markdown.previewStyles": [

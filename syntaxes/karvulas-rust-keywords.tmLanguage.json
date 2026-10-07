@@ -1,0 +1,11 @@
+{
+    "name": "Karvulas Rust Keywords",
+    "scopeName": "karvulas.rust.keywords",
+    "injectionSelector": "L:source.rust - comment - string - meta.attribute.rust",
+    "patterns": [
+        {
+            "name": "keyword.declaration.static.rust",
+            "match": "(?<![\\w'#$])\\bstatic\\b"
+        }
+    ]
+}

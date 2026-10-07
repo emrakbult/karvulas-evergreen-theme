@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+## 0.6.0 - 2026-10-07
+
+### Added
+
+- Added a dedicated Rust palette for declarations, types, functions, macros, lifetimes, literals, attributes, comments, and punctuation, with matching rust-analyzer semantic colors.
+- Added a dedicated TOML palette for keys, tables, strings, numbers, booleans, dates, comments, and punctuation, with matching Taplo semantic key colors.
+- Added a Rust grammar injection to distinguish green `static` declarations from purple modifiers, while coloring control keywords blue.
+- Bundled TOML language detection, syntax grammar, comment toggling, and bracket/quote pairs for `.toml`, `Cargo.lock`, and `uv.lock` files, so basic highlighting works without a separate language extension.
+
 ## 0.5.1 - 2026-10-01
 
 ### Changed
