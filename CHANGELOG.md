@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 0.6.1 - 2026-10-08
+
+### Changed
+
+- Colored C# method names blue in both TextMate and Roslyn semantic highlighting, including extension methods.
+
 ## 0.6.0 - 2026-10-07
 
 ### Added

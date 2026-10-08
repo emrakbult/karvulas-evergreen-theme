@@ -1372,7 +1372,7 @@
                 "source.cs entity.name.function.extension.cs"
             ],
             "settings": {
-                "foreground": "#9653D6"
+                "foreground": "#1A6CEE"
             }
         },
         {
@@ -3099,9 +3099,9 @@
         "delegate:csharp": "#9653D6",
         "type:csharp": "#009451",
         "typeParameter:csharp": "#009451",
-        "function:csharp": "#9653D6",
-        "method:csharp": "#9653D6",
-        "extensionMethod:csharp": "#9653D6",
+        "function:csharp": "#1A6CEE",
+        "method:csharp": "#1A6CEE",
+        "extensionMethod:csharp": "#1A6CEE",
         "property:csharp": "#080808",
         "field:csharp": "#3F3F3F",
         "event:csharp": "#A17900",
