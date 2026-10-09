@@ -1588,7 +1588,7 @@
             "name": "Rust - Control Keywords",
             "scope": "source.rust keyword.control",
             "settings": {
-                "foreground": "#1A6CEE"
+                "foreground": "#BE1818"
             }
         },
         {
@@ -1677,20 +1677,11 @@
             }
         },
         {
-            "name": "Rust - String Delimiters and Format Markers",
+            "name": "Rust - Escapes and Format Markers",
             "scope": [
-                "source.rust punctuation.definition.string",
-                "source.rust punctuation.definition.char",
-                "source.rust meta.interpolation",
-                "source.rust meta.interpolation punctuation.definition.interpolation"
+                "source.rust constant.character.escape",
+                "source.rust meta.interpolation"
             ],
-            "settings": {
-                "foreground": "#007F9E"
-            }
-        },
-        {
-            "name": "Rust - Escapes",
-            "scope": "source.rust constant.character.escape",
             "settings": {
                 "foreground": "#1A6CEE"
             }
@@ -1716,14 +1707,14 @@
             "name": "Rust - Operators",
             "scope": "source.rust keyword.operator",
             "settings": {
-                "foreground": "#1A6CEE"
+                "foreground": "#BE1818"
             }
         },
         {
             "name": "Rust - Punctuation",
             "scope": "source.rust punctuation",
             "settings": {
-                "foreground": "#1A6CEE"
+                "foreground": "#BE1818"
             }
         },
         {
@@ -3166,7 +3157,7 @@
         // =====================================================
         // Leave generic keywords to TextMate to preserve separate colors
         // for declarations, modifiers, and control flow.
-        "keyword.controlFlow:rust": "#1A6CEE",
+        "keyword.controlFlow:rust": "#BE1818",
         "namespace:rust": "#1A6CEE",
         "module:rust": "#1A6CEE",
         "function:rust": "#1A6CEE",
@@ -3178,24 +3169,24 @@
         "lifetime:rust": "#1A6CEE",
         "label:rust": "#1A6CEE",
         "escapeSequence:rust": "#1A6CEE",
-        "formatSpecifier:rust": "#007F9E",
-        "operator:rust": "#1A6CEE",
-        "arithmetic:rust": "#1A6CEE",
-        "bitwise:rust": "#1A6CEE",
-        "comparison:rust": "#1A6CEE",
-        "logical:rust": "#1A6CEE",
-        "negation:rust": "#1A6CEE",
-        "punctuation:rust": "#1A6CEE",
-        "attributeBracket:rust": "#1A6CEE",
-        "angle:rust": "#1A6CEE",
-        "brace:rust": "#1A6CEE",
-        "bracket:rust": "#1A6CEE",
-        "parenthesis:rust": "#1A6CEE",
-        "colon:rust": "#1A6CEE",
-        "comma:rust": "#1A6CEE",
-        "dot:rust": "#1A6CEE",
-        "semicolon:rust": "#1A6CEE",
-        "macroBang:rust": "#1A6CEE",
+        "formatSpecifier:rust": "#BE1818",
+        "operator:rust": "#BE1818",
+        "arithmetic:rust": "#BE1818",
+        "bitwise:rust": "#BE1818",
+        "comparison:rust": "#BE1818",
+        "logical:rust": "#BE1818",
+        "negation:rust": "#BE1818",
+        "punctuation:rust": "#BE1818",
+        "attributeBracket:rust": "#BE1818",
+        "angle:rust": "#BE1818",
+        "brace:rust": "#BE1818",
+        "bracket:rust": "#BE1818",
+        "parenthesis:rust": "#BE1818",
+        "colon:rust": "#BE1818",
+        "comma:rust": "#BE1818",
+        "dot:rust": "#BE1818",
+        "semicolon:rust": "#BE1818",
+        "macroBang:rust": "#BE1818",
         "variable.callable:rust": "#1A6CEE",
         "class:rust": "#009451",
         "type:rust": "#009451",

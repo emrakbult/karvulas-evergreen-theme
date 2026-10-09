@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## 0.7.1 - 2026-10-09
+
+### Changed
+
+- Restored separate Rust string and format highlighting, retaining cyan string contents.
+- Colored Rust control keywords, including conditionals and loops, with the main red `#BE1818` in TextMate and rust-analyzer semantic highlighting.
+- Colored Rust operators and punctuation, including string delimiters and format punctuation, with the main red `#BE1818`.
+
 ## 0.7.0 - 2026-10-09
 
 ### Changed
