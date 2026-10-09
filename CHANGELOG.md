@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## 0.7.0 - 2026-10-09
+
+### Changed
+
+- Replaced purple syntax accents with the main red `#BE1818` across language palettes, TextMate and semantic highlighting, bracket colors, and Markdown Preview code blocks.
+
+### Fixed
+
+- Kept Rust string and character delimiters and format markers cyan instead of inheriting blue punctuation colors.
+
 ## 0.6.1 - 2026-10-08
 
 ### Changed

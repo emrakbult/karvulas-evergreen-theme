@@ -50,7 +50,7 @@ body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vs
 }
 
 body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) :is(.hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable) {
-    color: #9653D6;
+    color: #BE1818;
 }
 
 body.vscode-light:is([data-vscode-theme-id="Karvulas Evergreen Light"], [data-vscode-theme-name="Karvulas Evergreen Light"]) :is(.hljs-comment, .hljs-quote, .hljs-doctag) {
